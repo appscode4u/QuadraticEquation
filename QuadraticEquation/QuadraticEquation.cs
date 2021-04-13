@@ -2,18 +2,18 @@
 
 namespace QuadraticEquation
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine(QuadraticEquation.SolveQuadraticEquation(2,3,4));
-            Console.ReadKey();
+
         }
     }
-
-    public class QuadraticEquation
+    public class QuadraticEquationCalculation
     {
-        public static int SolveQuadraticEquation(int a, int b, int c)
+        public QuadraticEquationCalculation() {}
+
+        public int CalculateNumberOfRoots(double a, double b, double c)
         {
 
             double delta = Math.Pow(b, 2) - 4 * a * c;
@@ -42,7 +42,7 @@ namespace QuadraticEquation
                 string aPlusBi = A + "+" + B + "i";
                 string aMinusBi = A + "-" + B + "i";
                 string txt = aPlusBi + " " + aMinusBi;
-                return 0;
+                return 0; //because task was only for real numbers, so we will return count of 0
             }
             
         }
