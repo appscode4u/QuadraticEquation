@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuadraticEquation
 {
@@ -32,8 +28,6 @@ namespace QuadraticEquation
                     return 2;
                 }
                 catch { return -1;}
-
-
             }
             else if (delta == 0)
             {
@@ -48,7 +42,7 @@ namespace QuadraticEquation
                 string aPlusBi = A + "+" + B + "i";
                 string aMinusBi = A + "-" + B + "i";
                 string txt = aPlusBi + " " + aMinusBi;
-                return -1;
+                return 0;
             }
             
         }
