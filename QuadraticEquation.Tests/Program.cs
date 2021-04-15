@@ -15,7 +15,7 @@ namespace QuadraticEquation.Tests
         [TestCase(1, -18, 106, 0)]
         [TestCase(6, -120, 816, 0)]
         [TestCase(8, 160, 1600, 0)]
-        [Description("This test proff counts of roots for diffrent cases")]
+        [Description("Test proff that there are no roots in real numbers range")]
         public void CalculateNumberOfRoots_ValidValues_ExpectedZeroRoots(double a, double b, double c, int expectedRootsCount)
         {
             var q = new QuadraticEquationCalculation();
@@ -26,7 +26,7 @@ namespace QuadraticEquation.Tests
         [Test]
         [TestCase(1, 2, 1, 1)]
         [TestCase(1, -2, 1, 1)]
-        [Description("This test proff counts of roots for diffrent cases")]
+        [Description("Test proff that there is only one root")]
         public void CalculateNumberOfRoots_ValidValues_ExpectedOneRoot(double a, double b, double c, int expectedRootsCount)
         {
             var q = new QuadraticEquationCalculation();
@@ -44,7 +44,7 @@ namespace QuadraticEquation.Tests
         [TestCase(1, 1, -72, 2)]
         [TestCase(5, -20, 0, 2)]
         [TestCase(0.12, -10.33, 0.66, 2)]
-        [Description("This test proff counts of roots for diffrent cases")]
+        [Description("Test proff that there are two roots in real number range")]
         public void CalculateNumberOfRoots_ValidValues_ExpectedTwoRoots(double a, double b, double c, int expectedRootsCount)
         {
             var q = new QuadraticEquationCalculation();
@@ -58,7 +58,7 @@ namespace QuadraticEquation.Tests
         [TestCase(6, -120, 816, 0)]
         [TestCase(1, 2, 1, 1)]
         [TestCase(1, -2, 1, 1)]
-        [Description("This test proff counts of roots for diffrent cases")]
+        [Description("Test for only one or no roots")]
         public void CalculateNumberOfRoots_ValidValues_ExpectedLessOrEqualOneRoot(double a, double b, double c, int expectedRootsCount)
         {
             var q = new QuadraticEquationCalculation();
